@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-div{
+ width: 800px;
+ border: 1px solid black;
+ margin: 30px auto;
+ padding: 20px;
+ text-align: center;
+}
+.main-hover{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin: auto;
+}
+.main-hover img{
+ width: 100%;
+ height: 100%;
+}
+.text-div{
+ position: absolute;
+ left: 0px;
+ top: 0px;
+ background-color: chocolate;
+ height: 0%;
+ width: 0%;
+ color: white;
+ opacity: .0;
+ visibility: hidden;
+ transition: .6s;
+}
+.text-div h2{
+    margin-top: 150px;
+    font-size: 25px;
+}
+.main-hover:hover .text-div{
+    height: 100%;
+  width: 100%;
+  visibility: visible;
+  opacity: .6;
+}
